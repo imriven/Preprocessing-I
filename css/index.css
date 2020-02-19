@@ -1,1 +1,223 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Krona One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Krona One'), local('KronaOne-Regular'), url(https://fonts.gstatic.com/s/kronaone/v8/jAnEgHdjHcjgfIb1ZcUyNoWl.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 1px solid orangered;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/********* Main *********/
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+#videoBG {
+  position: fixed;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 1.77777778) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 1.77777778) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #videoBG {
+    display: none;
+  }
+}
+body {
+  background: url('../images/rain-drops.jpg');
+  background-size: cover;
+}
+/* video background code provided by TK - https://redstapler.co/responsive-css-video-background/ */
+.container {
+  display: flex;
+  width: 100%;
+}
+.page {
+  background-color: rgba(103, 128, 159, 0.8);
+  border-radius: 15px;
+  margin-top: 2%;
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+nav {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3%;
+}
+nav .links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+}
+nav .logo {
+  width: 50%;
+}
+nav h1 {
+  font-size: 2rem;
+  color: lightslategray;
+  font-family: 'Krona One', sans-serif;
+}
+/****** Skills ******/
