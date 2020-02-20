@@ -6,12 +6,41 @@
 
 @import url('https://fonts.googleapis.com/css?family=Krona+One|Montserrat&display=swap');
 
+//var fonts
 @header:'Krona One', sans-serif;
 @copy-text: 'Montserrat', sans-serif;
 
+// var colors
 @highlight: darkorchid;
 @accent: lightslategray;
+@contrast: orange;
 
+
+// mixins
+
+.centered(){
+	display:flex;
+	justify-content:center;
+  }
+
+.highlight(){
+	background-color: @highlight;
+	font-family: @header;
+	text-decoration: underline overline;
+	text-decoration-color: @contrast;
+}
+
+.solid(){
+	background-color:rgba(255, 255, 255, .5);
+}
+
+.liststyle() {
+	list-style-type: square;
+	padding-right: 2%;
+	color: blue; 
+}
+
+-------------------------------------------------------
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,7 +56,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border:1px solid orangered;
+	border:1px solid orangered; 
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -136,24 +165,103 @@ nav {
 		justify-content: space-evenly;
 		align-items: center;
 		width: 60%;
-  	}
-	
-	.logo {
-		width: 50%;
-	}
-	
+	  }
+
+
   	h1 {
 		font-size: 2rem;
 		color: @accent;
 		font-family: @header;
 	}
 
+	address {
+		.highlight();
+		margin-top: 2%
+	}
+	
 }
   
 
-  
-  
+/********* Introduction **********/
 
+.intro-img {
+	
+	.centered();
+	margin: 0 3%;
+	width: 26%;
 
+	img {
+		border-radius: 50px;
+	}
+}
+
+.top-intro {
+	.solid();
+	display: flex;
+	width:100%;
+	padding: 3% 0;
+
+	h2 {
+		.centered();
+		margin: 2% 0;
+		font-size: 1.5rem;
+	}
+
+	p {
+		.centered();
+		line-height: 2.3;
+		width: 90%;
+		text-align: justify;
+	}
+
+}
   /****** Skills ******/
 
+.empty {
+	width: 100%;
+	margin: 3%;
+
+}
+
+.bottom-resume {
+	display: flex;
+	flex-wrap: wrap;
+	.solid();
+	justify-content: space-between;
+
+	.skills-container{
+		margin: 0 10%;
+		.solid();
+		padding:10%;
+		height: 100%
+	}
+
+	h2 {
+		.centered();
+		margin-bottom: 15%;
+		font-size: 1.5rem;
+		
+	}
+
+	.tool-container{
+		margin-right: 10%;
+		.solid();
+		padding:10%;
+		height: 100%;
+	}
+	
+	.work-container{
+		.solid();
+		padding:10%;
+		line-height: 120%;
+		width: 100%;
+	}
+
+	li {
+		margin: 2% 5%
+	}
+
+	p {
+		font-size: small;
+	}
+}
