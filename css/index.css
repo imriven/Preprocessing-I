@@ -289,8 +289,52 @@ nav address {
   width: 100%;
 }
 .bottom-resume li {
-  margin: 2% 5%;
+  zmargin: 6% 5%;
 }
 .bottom-resume p {
   font-size: small;
+}
+.end-resume {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.5);
+  justify-content: space-between;
+  width: 100%;
+}
+.end-resume .edu-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10% 30;
+  height: 100%;
+  width: 140%;
+  line-height: 120%;
+}
+.end-resume h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+  font-size: 1.5rem;
+  padding: 3% 0;
+}
+.end-resume #Education {
+  width: 35%;
+}
+.end-resume #Hobbies {
+  width: 49%;
+}
+.end-resume .hobby-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10 30%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.end-resume li {
+  margin: 6% 5%;
+}
+.end-resume p {
+  font-size: small;
+}
+footer {
+  padding: 2%;
+  text-align: center;
 }
