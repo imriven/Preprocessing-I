@@ -16,7 +16,7 @@
 @contrast: orange;
 
 
-// mixins
+
 
 .centered(){
 	display:flex;
@@ -34,13 +34,8 @@
 	background-color:rgba(255, 255, 255, .5);
 }
 
-.liststyle() {
-	list-style-type: square;
-	padding-right: 2%;
-	color: blue; 
-}
 
--------------------------------------------------------
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,7 +51,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border:1px solid orangered; */
+	border:1px solid orangered; 
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -86,16 +81,6 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
-
-
 
 /********* Main *********/
 
@@ -104,11 +89,7 @@ html, body {
 	box-sizing: border-box;
   }
 
-html,body {
-	width:100vw;
-	height: 100vh;
-	margin: 0;
-  }
+
   
 #videoBG {
 	position:fixed;
@@ -159,24 +140,48 @@ nav {
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 3%;
+
+	@media (max-width: 500px) {
+		display: flex;
+		flex-wrap: wrap-reverse;
+		width: 100%;
+	}
   
   	.links {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
 		width: 60%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			}
 	  }
 
+	  
 
   	h1 {
 		font-size: 2rem;
 		color: @accent;
 		font-family: @header;
+
+		@media (max-width: 500px) {
+			color: white;
+			font-size: 1.2rem;
+			text-align: center;
+			margin: 3% 0;
+			}
 	}
 
 	address {
 		.highlight();
-		margin-top: 2%
+		margin-top: 2%;
+
+		@media (max-width: 500px) {
+			text-align: center;
+			}
 	}
 	
 }
@@ -192,8 +197,13 @@ nav {
 
 	img {
 		border-radius: 50px;
+		
+		@media (max-width: 500px) {
+			display: none;
+		}
 	}
 }
+
 
 .top-intro {
 	.solid();
@@ -230,15 +240,30 @@ nav {
 	.solid();
 	justify-content: space-between;
 
+	@media (max-width: 500px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	.skills-container{
 		margin: 0 10%;
 		.solid();
 		padding:10%;
-		height: 100%
+		height: 100%;
+
+		@media (max-width: 500px) {
+			margin: 0 10% 15% 10%;
+			height: 90%;
+		}
+		
 	}
 
 	#Skills {
 		width: 32%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			}
 	}
 
 	h2 {
@@ -250,6 +275,11 @@ nav {
 
 	#Tools {
 		width: 25%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			}
+
 	}
 
 	.tool-container{
@@ -257,8 +287,16 @@ nav {
 		.solid();
 		padding:10%;
 		height: 100%;
+
+		@media (max-width: 500px) {
+			margin: 0 10% 15% 10%;
+			height: 90%;
+		}
 	}
-	
+
+	#Work {
+		
+
 	.work-container{
 		.solid();
 		padding:10% 15%;
@@ -273,6 +311,7 @@ nav {
 	p {
 		font-size: small;
 	}
+	}
 }
 
 .end-resume {
@@ -282,12 +321,21 @@ nav {
 	justify-content: space-between;
 	width: 100%;
 
+	@media (max-width: 500px) {
+		display: flex;
+		flex-wrap: wrap;
+		}
+
 	.edu-container{
 		.solid();
 		padding:10% 30%;
 		height: 100%;
 		width:140%;
 		line-height: 120%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			}
 	}
 
 	h2 {
@@ -300,11 +348,24 @@ nav {
 
 	#Education {
 		width: 35%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			margin: 0 10% 15% 10%;
+			height: 90%;
+			}
 	}
 
 	#Hobbies {
-		width: 49%
+		width: 49%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			margin: 0 10% 15% 10%;
+			height: 90%;
+			}
 	}
+
 
 	.hobby-container{
 		.solid();
