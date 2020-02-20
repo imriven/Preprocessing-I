@@ -99,7 +99,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 1px solid orangered;
+  /* border:1px solid orangered; */
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -270,11 +270,17 @@ nav address {
   padding: 10%;
   height: 100%;
 }
+.bottom-resume #Skills {
+  width: 32%;
+}
 .bottom-resume h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 15%;
   font-size: 1.5rem;
+}
+.bottom-resume #Tools {
+  width: 25%;
 }
 .bottom-resume .tool-container {
   margin-right: 10%;
@@ -284,12 +290,12 @@ nav address {
 }
 .bottom-resume .work-container {
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 10%;
+  padding: 10% 15%;
   line-height: 120%;
   width: 100%;
 }
 .bottom-resume li {
-  zmargin: 6% 5%;
+  margin: 6% 5%;
 }
 .bottom-resume p {
   font-size: small;
@@ -303,7 +309,7 @@ nav address {
 }
 .end-resume .edu-container {
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 10% 30;
+  padding: 10% 30%;
   height: 100%;
   width: 140%;
   line-height: 120%;
@@ -323,7 +329,7 @@ nav address {
 }
 .end-resume .hobby-container {
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 10 30%;
+  padding: 10% 30%;
   height: 100%;
   width: 100%;
   text-align: center;
